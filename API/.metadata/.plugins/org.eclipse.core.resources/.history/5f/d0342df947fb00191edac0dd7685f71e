@@ -1,0 +1,5 @@
+package com.music.mappers;
+
+public class SongMapper {
+
+}

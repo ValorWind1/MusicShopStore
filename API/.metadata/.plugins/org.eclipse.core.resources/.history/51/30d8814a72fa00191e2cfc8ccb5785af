@@ -1,0 +1,29 @@
+cache: false
+check-template: true
+check-template-location: true
+content-type: text/html
+database: MYSQL
+database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+datasource: ''
+ddl-auto: none
+enabled: true
+encoding: UTF-8
+hibernate:
+  id:
+    new_generator_mappings: false
+indent-output: true
+jackson: ''
+jpa: ''
+mode: HTML
+password: Dl113311
+port: 8080
+prefix: classpath:/templates/
+properties: ''
+serialization: ''
+server: ''
+show-sql: true
+spring: ''
+suffix: .html
+thymeleaf: ''
+url: jdbc:mysql://localhost:3306/movie_db2?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+username: root
