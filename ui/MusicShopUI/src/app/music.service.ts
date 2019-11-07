@@ -10,11 +10,16 @@ export class HeaderInterceptor implements HttpInterceptor {
   }
 }
 
-
 @Injectable({
   providedIn: 'root'
+
 })
 export class MusicService {
+
+  printToConsole (arg) {
+    console.log(arg);
+  }
+
 
   constructor() { }
 }

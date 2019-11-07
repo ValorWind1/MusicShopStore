@@ -20,21 +20,20 @@ public class Song {
 	
 	
 	private String Albums;
-	private String art;
 	private String price;
 	
 	public Song() {
 		
 		}
 	
-	public Song(Long id, String name, String genreType, String albums, String art, String price) {	
+	public Song(Long id, String name, String genreType, String albums,  String price) {	
 		
 		
 		this.id = id;
 		this.name = name;
 		this.genreType = genreType;
 		this.Albums = albums;
-		this.art = art;
+		
 		this.price = price;
 	}
 	
@@ -63,12 +62,8 @@ public class Song {
 	public void setAlbums(String albums) {
 		Albums = albums;
 	}
-	public String getArt() {
-		return art;
-	}
-	public void setArt(String art) {
-		this.art = art;
-	}
+	
+	
 	public String getPrice() {
 		return price;
 	}
@@ -78,8 +73,8 @@ public class Song {
 	
 	@Override
 	public String toString() {
-		return "Song [id=" + id + ", name=" + name + ", genreType=" + genreType + ", Albums=" + Albums + ", art=" + art
-				+ ", price=" + price + "]";
+		return "Song [id=" + id + ", name=" + name + ", genreType=" + genreType + ", Albums=" + Albums + 
+				", price=" + price + "]";
 	}
 	
 }

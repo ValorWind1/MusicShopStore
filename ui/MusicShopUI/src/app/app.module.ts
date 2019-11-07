@@ -3,18 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { MusicService } from './music.service';
+import { ViewComponent } from './view/view.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    ViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    MusicService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
