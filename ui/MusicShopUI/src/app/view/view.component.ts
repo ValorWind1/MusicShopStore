@@ -22,7 +22,7 @@ export class ViewComponent implements OnInit {
 
 
   search (){
-    this.http.get('http://localhost:8080/api/albumns' +this.album)
+    this.http.get('http://localhost:8080/api/albumns/' +this.album)
     .subscribe((response) => {
       this.response = response;
       console.log(this.response);
