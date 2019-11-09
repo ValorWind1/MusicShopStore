@@ -16,6 +16,7 @@ public class SongMapper {
 		song.setAlbums(dto.getAlbums());
 		song.setGenreType(dto.getGenreType());
 		song.setPrice(dto.getPrice());
+		song.setSongs(dto.getSongs());
 		return song;
 	
 		
@@ -30,7 +31,7 @@ public class SongMapper {
 		song.setName(entity.getName());
 		song.setPrice(entity.getPrice());
 		song.setAlbums(entity.getAlbums());
-		
+		song.setSongs(entity.getSongs());
 		song.setGenreType(entity.getGenreType());
 		return song;
 		

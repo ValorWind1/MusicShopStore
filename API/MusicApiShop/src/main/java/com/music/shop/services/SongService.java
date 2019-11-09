@@ -58,7 +58,7 @@ public class SongService {
 			Song updatedMats = findById.get();
 			updatedMats.setName(mats.getName());
 			updatedMats.setAlbums(mats.getAlbums());
-			
+			updatedMats.setSongs(mats.getSongs());
 			updatedMats.setPrice(mats.getPrice());
 			updatedMats.setGenreType(mats.getGenreType());
 			updatedMats.setId(mats.getId());

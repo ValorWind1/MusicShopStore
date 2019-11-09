@@ -11,10 +11,12 @@ import { ViewComponent } from './view/view.component';
 import { FormsModule } from '@angular/forms';
 
 import { AlertModule } from 'ngx-bootstrap';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { MusicComponent } from './music/music.component';
     AppRoutingModule,
     FormsModule,
     AlertModule.forRoot(),
+    ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
   ],
   providers: [

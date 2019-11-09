@@ -1,4 +1,20 @@
-<div>
+<div class="container-fluid text-center" >
+ Album ID # : <input type="text" [(ngModel)]="album" >
+<button (click)="search()">Search</button>
+
+
+<div *ngIf="response">
+<p>Artist Name : {{response.name}}</p>
+<p>Artist Album: {{response.albums}}</p>
+<p>Artist Hit Song: {{response.songs}}</p>
+<p>Artist genre: {{response.genreType}}</p>
+<p>Album Price : {{response.price}}</p>
+</div>
+<br>
+<br>
+</div>
+
+<div class="container-fluid text-center" >
     <carousel>
         <slide>
           <img src="../../assets/Nirvana.png" alt="first slide" style="display: block; width: 100%;">
@@ -9,5 +25,11 @@
         <slide>
           <img src="../../assets/LedZeppelin.png" alt="third slide" style="display: block; width: 100%;">
         </slide>
+        <slide>
+            <img src="../../assets/beatles.jpg" alt="third slide" style="display: block; width: 100%;">
+          </slide>
+          <slide>
+            <img src="../../assets/paramore.jpg" alt="third slide" style="display: block; width: 100%;">
+          </slide>
       </carousel>
-</div>
+</div>` 

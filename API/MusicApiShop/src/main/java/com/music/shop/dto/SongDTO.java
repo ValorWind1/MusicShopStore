@@ -7,11 +7,13 @@ public class SongDTO {
 	private String name;
 	private String genreType;
 	private String Albums;
-	
+	private String Songs;
 	private String price;
 	
 	
 	
+
+
 
 	public Long getId() {
 		return id;
@@ -45,6 +47,14 @@ public class SongDTO {
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+	
+	public String getSongs() {
+		return Songs;
+	}
+
+	public void setSongs(String songs) {
+		Songs = songs;
 	}
 	
 
