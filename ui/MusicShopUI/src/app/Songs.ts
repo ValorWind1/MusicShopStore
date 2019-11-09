@@ -5,7 +5,8 @@ export class Songs {
     Genre_type : String ;
     Albums : String ;
     Songs : String ;
-    price : String ; 
+    price : String ;
+    realId: number; 
 
     hideAlert = false; 
 

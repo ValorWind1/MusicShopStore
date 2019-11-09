@@ -16,6 +16,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MusicComponent } from './music/music.component';
+import { ArtComponent } from './art/art.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { MusicComponent } from './music/music.component';
     NavbarComponent,
     HomeComponent,
     MusicComponent,
+    ArtComponent,
+    AboutComponent,
     
   ],
   imports: [
