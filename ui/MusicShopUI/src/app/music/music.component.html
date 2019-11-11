@@ -3,12 +3,12 @@
       <thead class="thead-dark">
         <tr>
           <th scope="col">#</th>
-          <th scope="col">Image</th>
+          
           <th scope="col">Artist Name</th>
           <th scope="col">Genre Type</th>
-          <th scope="col">album</th>
-          <th scope="col">Song</th>
+          <th scope="col">Album Name</th>
           <th scope="col">Price</th>
+          <th scope="col">Song</th>
           <th scope="col">Add to Cart</th>
         </tr>
       </thead>
@@ -20,14 +20,16 @@
         <tr *ngFor="let song of songs" class="text center">
           <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.realId}}</td>
           <!-- <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)"><audio src = {{song.Songs}}></td> -->
-          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.Artist_name}}</td>
-          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.Genre_type}}</td>
-          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.Albums}}</td>
-          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.Genre_type}}</td>
+          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.name}}</td>
+          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.genreType}}</td>
+          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.albums}}</td>
           <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">{{song.price | currency}}</td>
-          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)">
-            <button *ngIf="!song.hideAlert" (click)="addToCart(song); song.hideAlert = true; delay(2000, song)" type ="button" class = "btn btn-success">Add</button>
-          <h6><span class="badge badge-success" [hidden]="!song.hideAlert">Added to Cart</span></h6></td>
+          <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)"><img class = "iamge " src = {{song.songs}} style="display: block; width: 20%;"></td>
+            
+            
+          <!-- <td *ngIf="!active || song.Artist_name.startsWith(Artist_name)"> -->
+            <!-- <button *ngIf="!song.hideAlert" (click)="addToCart(song); song.hideAlert = true; delay(2000, song)" type ="button" class = "btn btn-success">Add</button> -->
+          <!-- <h6><span class="badge badge-success" [hidden]="!song.hideAlert">Added to Cart</span></h6></td> -->
         </tr>
 
       </tbody>

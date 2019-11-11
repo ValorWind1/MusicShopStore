@@ -6,12 +6,12 @@ id int(200) not null,
 Artist_name varchar(100),
 Genre_type varchar (100) not null,
 Albums varchar(100) not null,
-Songs varchar (100) not null,
+Songs varchar (1000) not null,
 price varchar(1000) not null,
 primary key (id)
 );
 
-insert into Music(id,Artist_name, Genre_type,  Albums, Songs, price) values(1,'Mac Demarco','blue wave','2','E:/Workspace1/MusicShopStore/Assets/mykindWoman.mp3','10');
+insert into Music(id,Artist_name, Genre_type,  Albums, Songs, price) values(1,'Mac Demarco','blue wave','2','https://f4.bcbits.com/img/a3748808697_10.jpg','10');
 insert into Music(id,Artist_name, Genre_type , Albums, Songs, price) values(2,'Nirvana','Grunge','In Utero','Heart Shaped Box','10');
 insert into Music(id,Artist_name, Genre_type , Albums, Songs,  price) values(3,'Led Zepellin','Hard rock','Mothership','Immigrant Song','10');
 insert into Music(id,Artist_name, Genre_type , Albums, Songs,  price) values(4,'The Beatles','Classic Rock','Abbey Road','Something','10');
